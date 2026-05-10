@@ -58,3 +58,25 @@ Configure these values in `.env`:
 - `LLM_MODEL=...`
 
 The live integration uses an OpenAI-compatible `chat/completions` API shape.
+
+## Deploy rápido en Render
+
+La forma más simple de dejar esta demo online es usar Render como un solo servicio web. Este repo ya incluye un archivo [render.yaml](./render.yaml) listo para deploy.
+
+### Pasos
+
+1. Entrá a [Render](https://render.com/).
+2. Elegí `New` -> `Blueprint`.
+3. Conectá tu GitHub y seleccioná este repo: `gonhers/optIA`.
+4. Render va a detectar automáticamente `render.yaml`.
+5. Confirmá el deploy.
+6. Cuando termine, te va a dar una URL pública `onrender.com`.
+
+### Configuración usada
+
+- Build command: `pip install -r backend/requirements.txt`
+- Start command: `uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT`
+
+### Nota
+
+En este momento la app puede publicarse directamente en `simulation mode`, así que no necesitás variables de entorno para mostrarla.
