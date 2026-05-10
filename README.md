@@ -1,11 +1,6 @@
-# Prompt Optimizer SaaS
+# optIA
 
-Simple full-stack SaaS demo with:
-
-- FastAPI backend
-- React frontend
-- Tailwind CSS styling
-- Simulated or live response generation and scoring
+Prompt optimizer SaaS demo with a FastAPI backend, React frontend, Tailwind CSS styling, and simulated or live response generation and scoring.
 
 ## Run
 
